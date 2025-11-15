@@ -2,26 +2,26 @@
 
 A comprehensive guide to building production-ready AI agents using Google's Agent Development Kit (ADK).
 
-## =� Course Overview
+## Course Overview
 
 This repository contains materials from the Google/Kaggle 5-day intensive course on AI agents. The course progresses from basic agent concepts to production deployment on Google Cloud.
 
-**Learning Path:** Basic Agents � Advanced Tools � State Management � Quality Assurance � Production Deployment
+**Learning Path:** Basic Agents → Advanced Tools → State Management → Quality Assurance → Production Deployment
 
 ---
 
-## =� Day-by-Day Content
+## Day-by-Day Content
 
 ### [Day 1: Introduction to AI Agents](Day%201/)
 
 **Core Concept:** From static LLM responses to action-taking agents
 
 **Files:**
-- =� [Day_1_v4_Induction_to_Agents.pdf](Day%201/Day_1_v4_Induction_to_Agents.pdf) - Course introduction and concepts
-- =� [day-1a-from-prompt-to-action.ipynb](Day%201/day-1a-from-prompt-to-action.ipynb) - Hands-on notebook
+- [Day_1_v4_Induction_to_Agents.pdf](Day%201/Day_1_v4_Induction_to_Agents.pdf) - Course introduction and concepts
+- [day-1a-from-prompt-to-action.ipynb](Day%201/day-1a-from-prompt-to-action.ipynb) - Hands-on notebook
 
 **What You'll Learn:**
-- **Agent vs LLM difference:** Agents can reason � act � observe � respond (not just text output)
+- **Agent vs LLM difference:** Agents can reason → act → observe → respond (not just text output)
 - **Setting up ADK:** Install `google-adk`, configure Gemini API
 - **Your first agent:** Build a simple assistant with Google Search tool
 - **ADK Web UI:** Interactive testing and debugging interface
@@ -44,9 +44,9 @@ root_agent = Agent(
 **Core Concept:** Building custom tools and integrating external services
 
 **Files:**
-- =� [Agent Tools & Interoperability with MCP.pdf](Day%202/Agent%20Tools%20&%20Interoperability%20with%20Model%20Context%20Protocol%20%28MCP%29.pdf)
-- =� [day-2a-agent-tools.ipynb](Day%202/day-2a-agent-tools.ipynb) - Custom function tools
-- =� [day-2b-agent-tools-best-practices.ipynb](Day%202/day-2b-agent-tools-best-practices.ipynb) - MCP & long-running operations
+- [Agent Tools & Interoperability with MCP.pdf](Day%202/Agent%20Tools%20&%20Interoperability%20with%20Model%20Context%20Protocol%20%28MCP%29.pdf)
+- [day-2a-agent-tools.ipynb](Day%202/day-2a-agent-tools.ipynb) - Custom function tools
+- [day-2b-agent-tools-best-practices.ipynb](Day%202/day-2b-agent-tools-best-practices.ipynb) - MCP & long-running operations
 
 **What You'll Learn:**
 
@@ -80,15 +80,15 @@ def place_order(num_containers: int, tool_context: ToolContext):
 **Core Concept:** Conversation continuity and long-term memory
 
 **Files:**
-- =� [Context Engineering_ Sessions & Memory.pdf](Day%203/Context%20Engineering_%20Sessions%20&%20Memory.pdf)
-- =� [day-3a-agent-sessions.ipynb](Day%203/day-3a-agent-sessions.ipynb) - Session management
-- =� [day-3b-agent-memory.ipynb](Day%203/day-3b-agent-memory.ipynb) - Persistent memory
+- [Context Engineering_ Sessions & Memory.pdf](Day%203/Context%20Engineering_%20Sessions%20&%20Memory.pdf)
+- [day-3a-agent-sessions.ipynb](Day%203/day-3a-agent-sessions.ipynb) - Session management
+- [day-3b-agent-memory.ipynb](Day%203/day-3b-agent-memory.ipynb) - Persistent memory
 
 **What You'll Learn:**
 
 **From 3a (Sessions):**
 - **Session architecture:** Events (conversation history) + State (shared data)
-- **Persistence:** InMemory � Database (SQLite) � Agent Engine (production)
+- **Persistence:** InMemory → Database (SQLite) → Agent Engine (production)
 - **Context compaction:** Automatic summarization to reduce token usage
 - **Session state:** Cross-turn data storage with `tool_context.state`
 
@@ -112,9 +112,9 @@ def place_order(num_containers: int, tool_context: ToolContext):
 **Core Concept:** Debugging and systematic testing
 
 **Files:**
-- =� [Agent Quality.pdf](Day%204/Agent%20Quality.pdf)
-- =� [day-4a-agent-observability.ipynb](Day%204/day-4a-agent-observability.ipynb) - Logging and debugging
-- =� [day-4b-agent-evaluation.ipynb](Day%204/day-4b-agent-evaluation.ipynb) - Testing and evaluation
+- [Agent Quality.pdf](Day%204/Agent%20Quality.pdf)
+- [day-4a-agent-observability.ipynb](Day%204/day-4a-agent-observability.ipynb) - Logging and debugging
+- [day-4b-agent-evaluation.ipynb](Day%204/day-4b-agent-evaluation.ipynb) - Testing and evaluation
 
 **What You'll Learn:**
 
@@ -125,7 +125,7 @@ def place_order(num_containers: int, tool_context: ToolContext):
 - **Callback types:** before/after agent, tool, model + error handling
 
 **From 4b (Evaluation):**
-- **Why evaluate:** Agents are non-deterministic; small changes � big impacts
+- **Why evaluate:** Agents are non-deterministic; small changes → big impacts
 - **Test cases:** JSON format with inputs, expected outputs, expected tool calls
 - **Metrics:** Response match score (text similarity) + Tool trajectory score (correct tools)
 - **User simulation:** LLM-generated dynamic test scenarios
@@ -144,9 +144,9 @@ adk eval my_agent integration.evalset.json --config_file_path=test_config.json
 **Core Concept:** Multi-agent systems and cloud deployment
 
 **Files:**
-- =� [Prototype to Production.pdf](Day%205/Prototype%20to%20Production.pdf)
-- =� [day-5a-agent2agent-communication.ipynb](Day%205/day-5a-agent2agent-communication.ipynb) - A2A protocol
-- =� [day-5b-agent-deployment.ipynb](Day%205/day-5b-agent-deployment.ipynb) - Vertex AI deployment
+- [Prototype to Production.pdf](Day%205/Prototype%20to%20Production.pdf)
+- [day-5a-agent2agent-communication.ipynb](Day%205/day-5a-agent2agent-communication.ipynb) - A2A protocol
+- [day-5b-agent-deployment.ipynb](Day%205/day-5b-agent-deployment.ipynb) - Vertex AI deployment
 
 **What You'll Learn:**
 
@@ -182,7 +182,7 @@ adk deploy agent_engine \
 
 ---
 
-## <� Core Technologies
+## Core Technologies
 
 ### Google Agent Development Kit (ADK)
 
@@ -204,10 +204,10 @@ adk deploy agent_engine \
 
 ---
 
-## =� Tool Taxonomy Reference
+## Tool Taxonomy Reference
 
 ### Custom Tools
-- **Function Tools:** Python functions � agent tools
+- **Function Tools:** Python functions → agent tools
 - **Long-Running Function Tools:** Async operations with human approval
 - **Agent Tools:** Other agents as tools (delegation)
 - **MCP Tools:** External integrations (file systems, databases)
@@ -220,23 +220,23 @@ adk deploy agent_engine \
 
 ---
 
-## <� Skills Progression
+## Skills Progression
 
 By the end of this course, you can:
 
--  Create agents with tools and instructions
--  Build custom function tools with best practices
--  Integrate external services via MCP
--  Implement human-in-the-loop workflows
--  Manage conversation state and long-term memory
--  Debug agents with logs, traces, and Web UI
--  Evaluate agent performance systematically
--  Deploy agents to Google Cloud (Vertex AI)
--  Build multi-agent systems with A2A protocol
+- ✅ Create agents with tools and instructions
+- ✅ Build custom function tools with best practices
+- ✅ Integrate external services via MCP
+- ✅ Implement human-in-the-loop workflows
+- ✅ Manage conversation state and long-term memory
+- ✅ Debug agents with logs, traces, and Web UI
+- ✅ Evaluate agent performance systematically
+- ✅ Deploy agents to Google Cloud (Vertex AI)
+- ✅ Build multi-agent systems with A2A protocol
 
 ---
 
-## =� Quick Reference
+## Quick Reference
 
 ### Common Commands
 
@@ -303,7 +303,7 @@ def get_temperature(city: str) -> dict:
 
 ---
 
-## = External Resources
+## External Resources
 
 - **ADK Documentation:** https://google.github.io/adk-docs/
 - **A2A Protocol:** https://a2a-protocol.org/
@@ -314,16 +314,16 @@ def get_temperature(city: str) -> dict:
 
 ---
 
-## =� Repository Structure
+## Repository Structure
 
 ```
 Google-Intensive-AI-Agents-Nov2025/
-   Day 1/          # Introduction to AI Agents
-   Day 2/          # Agent Tools & MCP
-   Day 3/          # Sessions & Memory
-   Day 4/          # Observability & Evaluation
-   Day 5/          # A2A & Deployment
-   README.MD       # This file
+├── Day 1/          # Introduction to AI Agents
+├── Day 2/          # Agent Tools & MCP
+├── Day 3/          # Sessions & Memory
+├── Day 4/          # Observability & Evaluation
+├── Day 5/          # A2A & Deployment
+└── README.MD       # This file
 ```
 
 ---
